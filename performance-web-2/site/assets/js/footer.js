@@ -51,4 +51,4 @@ setTimeout(function() {
 
 	}
 
-}, 5000);
+}, 1000);

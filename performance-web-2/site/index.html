@@ -17,35 +17,47 @@
 	<link inline rel="stylesheet" href="assets/css/block-categoriaCard.css">
 	<link inline rel="stylesheet" href="assets/css/block-titulo-destaque.css">
 
-	<link inline rel="stylesheet" href="assets/css/home-diferenciais.css">
 	<link inline rel="stylesheet" href="assets/css/home-fundo.css">
 	<link inline rel="stylesheet" href="assets/css/home.css">
+	<link inline rel="stylesheet" href="assets/css/home-diferenciais.css">
 
-	<!--
-	<!-- build:css assets/css/resto.css -->
-	<link rel="stylesheet" href="assets/css/block-conteudo.css">
-	<link rel="stylesheet" href="assets/css/block-cursoCard.css">
-	<link rel="stylesheet" href="assets/css/block-depoimentos.css">
-	<link rel="stylesheet" href="assets/css/block-elasticMedia.css">
-	<link rel="stylesheet" href="assets/css/block-footer-listaCursos.css">
-	<link rel="stylesheet" href="assets/css/block-footer.css">
-	<link rel="stylesheet" href="assets/css/block-form-erro.css">
-	<link rel="stylesheet" href="assets/css/block-grupoCaelum.css">
-	<link rel="stylesheet" href="assets/css/block-highlighted.css">
-	<link rel="stylesheet" href="assets/css/block-painelPlanos.css">
-	<link rel="stylesheet" href="assets/css/block-titulos.css">
-	<link rel="stylesheet" href="assets/css/home-aprenda.css">
-	<!-- endbuild -->
-	-->
+	<!-- build:remove --><noscript><!-- endbuild -->
+	<link rel="preload" href="assets/css/async.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="assets/css/home-async.css" as="style" onload="this.rel='stylesheet'">
+	<!-- build:remove --></noscript><!-- endbuild -->
 
-	<link rel="preload" as="style"
-		href="assets/css/resto.css"
-		onload="this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="assets/css/resto.css"></noscript>
+	<noscript>
+		<!-- build:css assets/css/async.css -->
+		</noscript>
 
-		<script async src="assets/js/loadcss.js"></script>
-		<script async src="assets/js/cssrelpreload.js"></script>
+		<link rel="stylesheet" href="assets/css/block-conteudo.css">
+		<link rel="stylesheet" href="assets/css/block-cursoCard.css">
+		<link rel="stylesheet" href="assets/css/block-depoimentos.css">
+		<link rel="stylesheet" href="assets/css/block-elasticMedia.css">
+		<link rel="stylesheet" href="assets/css/block-footer-listaCursos.css">
+		<link rel="stylesheet" href="assets/css/block-footer.css">
+		<link rel="stylesheet" href="assets/css/block-form-erro.css">
+		<link rel="stylesheet" href="assets/css/block-grupoCaelum.css">
 
+		<link rel="stylesheet" href="assets/css/block-highlighted.css">
+		<link rel="stylesheet" href="assets/css/block-painelPlanos.css">
+		
+		<link rel="stylesheet" href="assets/css/block-titulos.css">
+
+		<noscript>
+		<!-- endbuild -->
+	</noscript>
+
+	<noscript>
+		<!-- build:css assets/css/home-async.css -->
+		</noscript>
+
+		<link rel="stylesheet" href="assets/css/home-aprenda.css">
+		<link rel="stylesheet" href="assets/css/home-diferenciais.css">
+
+		<noscript>
+		<!-- endbuild -->
+	</noscript>
 	
 </head>
 <body>
@@ -176,7 +188,7 @@
 			<h2 class="home-diferenciais-titulo">Aprenda, crie e desenvolva no Alura!</h2>
 			<div class="home-diferenciais-video-wrapper">
 				<div class="elasticMedia-container">
-					
+					<!-- video.js enfia o video aqui -->
 				</div>
 			</div>
 		</div>
@@ -903,17 +915,19 @@
 		</ul>
 	</div>
 </div>
-	<script inline src="assets/js/home.js"></script>
 
-	<!-- build:js assets/js/scripts.js async -->
-	<script src="assets/js/menu.js"></script>
-	<script src="assets/js/busca.js"></script>
-	<script src="assets/js/detect.js"></script>
-	<script src="assets/js/footer.js"></script>
-	<script src="assets/js/video.js"></script>
-	<script src="assets/js/lazyload.js"></script>
-	<script src="assets/js/svg4everybody.js"></script>
-	<!-- endbuild -->
+<script inline src="assets/js/home.js"></script>
+
+<script async src="assets/js/loadcss.js"></script>
+<script async src="assets/js/cssrelpreload.js"></script>
+<script async src="assets/js/menu.js"></script>
+<script async src="assets/js/busca.js"></script>
+<script async src="assets/js/detect.js"></script>
+<script async src="assets/js/footer.js"></script>
+<script async src="assets/js/svg4everybody.js"></script>
+<script async src="assets/js/video.js"></script>
+<script async src="assets/js/lazyload.js"></script>
+
 </body>
 </html>
 

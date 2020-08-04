@@ -1,21 +1,29 @@
-var jarodei = false;
+(function(){
 
-window.onscroll = function () {
-    // console.log('Scroll', scrollY); // log do scrool no console
+	var jarodei = false;
 
-    //throttle
-    if (jarodei) return;
-    jarodei = true;
-    setTimeout(function () {
-        jarodei = false;
-    }, 100);
+	window.onscroll = function () {
 
-    var imgs = document.querySelectorAll('img[data-src]');
+		// throttle
+		if (jarodei) return;
+		jarodei = true;
+		setTimeout(function () { 
+			jarodei = false; 
+		}, 200);
 
-    for (var i = 0; i < imgs.length; i++) {
+    	console.log('scroll');
 
-        if (imgs[i].getBoundingClientRect().top < window.innerHeight + 200) {
-            imgs[i].src = imgs[i].getAttribute('data-src')
-        }
-    }
-};
+    	// código em si
+		var imgs = document.querySelectorAll('img[data-src]:not([src])');
+
+		for (var i = 0; i < imgs.length; i++) {
+			if (imgs[i].getBoundingClientRect().top < window.innerHeight + 200) {
+
+				imgs[i].src = imgs[i].getAttribute('data-src');
+
+			}
+		}
+
+	};
+
+})();
